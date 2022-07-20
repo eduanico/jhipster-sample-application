@@ -1,0 +1,21 @@
+
+application {
+  config {
+    baseName myApp,
+    applicationType monolith,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework angular
+  }
+  entities *
+}
+
+entity A {}
+
+entity B {}
+
+relationship OneToMany {
+  Foo to Bar
+}
+    
